@@ -1,2 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Formato Nav*/
+.navbar {
+  background-color: rgba(255, 209, 209, 0.774);
+}
+
+.navbar-brand {
+  width: 50px;
+  height: 60px;
+}
+
+.nav-item a, select {
+  color: rgb(255, 148, 148);
+  font-style: italic;
+}
+
+/* Formato Main*/
+main, footer {
+  background-color: rgb(255, 227, 225);
+}
+
+main h1 {
+  text-align: center;
+  padding-top: 3px;
+}
+
+h3 {
+  font-family: "Indie Flower", cursive;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Cards*/
+.bi-recycle, .bi-droplet-half, .bi-car-front-fill {
+  background-color: rgb(255, 227, 225);
+  color: rgb(255, 148, 148);
+}
+
+.btn {
+  background-color: rgb(255, 148, 148);
+  border: rgb(255, 148, 148);
+}
+
+.btn:hover {
+  background-color: rgba(255, 0, 0, 0.514) !important;
+}
+
+/* Galeria*/
+.card {
+  filter: grayscale(100%);
+}
+
+.card:hover {
+  filter: none;
+}
+
+#footHover li:hoover {
+  background-color: yellow;
+}
+
+/* Footer
+footer ul li:hover {
+   background-color: rgb(231, 189, 185);
+}*/
+/* Redes Sociales */
+.bi-facebook {
+  color: rgb(63, 103, 178);
+  font-size: 20px;
+}
+
+.bi-pinterest {
+  color: rgb(230, 0, 35);
+  font-size: 20px;
+}
+
+.bi-whatsapp {
+  color: rgb(37, 211, 102);
+  font-size: 20px;
+}
+
+.bi-instagram {
+  color: rgb(255, 48, 108);
+  font-size: 20px;
+}
+
+@media (max-width: 300px) {
+  #alignSocial {
+    justify-content: center !important;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
