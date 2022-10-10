@@ -64,6 +64,10 @@ p {
 }
 
 /* Footer */
+.nav a {
+  color: rgb(255, 148, 148) !important;
+}
+
 #footerHover ul li:hover {
   background-color: rgba(221, 159, 154, 0.692);
 }
@@ -87,12 +91,6 @@ p {
 .bi-instagram {
   color: rgb(255, 48, 108);
   font-size: 20px;
-}
-
-@media (max-width: 300px) {
-  #alignSocial {
-    justify-content: center !important;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
