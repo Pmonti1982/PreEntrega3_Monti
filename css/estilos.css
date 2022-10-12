@@ -18,7 +18,7 @@ html {
 }
 
 .nav-item a, select {
-  color: rgb(255, 148, 148);
+  color: rgb(121, 79, 79) !important;
   font-style: italic;
 }
 
@@ -65,7 +65,7 @@ p {
 
 /* Footer */
 .nav a {
-  color: rgb(255, 148, 148) !important;
+  color: rgb(121, 79, 79) !important !important;
 }
 
 #footerHover ul li:hover {

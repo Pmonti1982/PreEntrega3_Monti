@@ -17,7 +17,7 @@ html {
     height: 60px;
 }
 .nav-item a, select {
-   color: $button-cardcolor;
+   color: $navli-footerli;
    font-style: italic;
 }
 
@@ -60,7 +60,7 @@ p {
 
 /* Footer */
 .nav a {
-    color: $button-cardcolor !important;
+    color: $navli-footerli !important;
 }
 #footerHover ul li:hover {
    background-color: rgba(231, 212, 211, 0.692);
