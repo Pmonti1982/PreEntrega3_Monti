@@ -27,7 +27,7 @@ main, footer {
   background-color: rgb(255, 227, 225);
 }
 
-main h1 {
+h1, h2 {
   text-align: center;
   padding-top: 3px;
 }
