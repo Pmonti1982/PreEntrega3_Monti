@@ -7,8 +7,8 @@
 }
 .formulario {  
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (5, 1fr);
     gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -114,22 +114,4 @@ p {
 .bi-instagram {
     color: rgb(255 48 108);
     font-size: 20px;
-}
-
-@media (max-width: 400px) {
-    .formulario {  
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 10px 10px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "nombre"
-          "email"
-          "pais"
-          "provincia"
-          "ciudad"
-          "cp"
-          "preguntas";
-      }
 }

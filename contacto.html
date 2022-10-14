@@ -59,62 +59,80 @@
     </header>
     <main>
       <h1>Dejanos tus Consultas</h1>
-      <!--Comienzo Formulario-->
-      <div class="formulario">
-        <!--Nombre-->
-        <div class="form-floating nombre mb-3">
-          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido">
-          <label for="nombre">Nombre y Apellido</label>
+      <form class="row g-3 px-5">
+        <!------------------------Email------------------------>
+        <div class="col-md-6">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input type="email" class="form-control form-control-sm" id="inputEmail" placeholder="ejemplo@email.com" required>
         </div>
-        <!--Nombre-->
+        <!------------------------Email------------------------>
 
-        <!--Email-->
-        <div class="form-floating email mb-3">
-          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
-          <label for="email">Email</label>
+        <!------------------------Nombre----------------------->
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre y Apellido</label>
+          <input type="text" class="form-control form-control-sm" id="nombre" required>
         </div>
-        <!--Email-->
-        
-        <!--Pais-->
-        <div class="form-floating pais mb-3">
-          <select class="form-select" id="pais" name="pais" aria-label="Pais">
-            <option selected>Elije el pais donde deseas enviar el producto</option>
-            <option value="1">Argentina</option>
-            <option value="2">Uruguay</option>
-            <option value="3">Chile</option>
+        <!------------------------Nombre----------------------->
+
+        <!------------------------Direccion-------------------->
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Direccion</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Av. Siempre Viva 1234" required>
+        </div>
+        <!------------------------Direccion-------------------->
+
+        <!------------------------Provincia-------------------->
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Provincia</label>
+          <select id="inputState" class="form-select">
+            <option selected>Seleccionar...</option>
+            <option>Buenos Aires</option>
+            <option>CABA</option>
+            <option>Tucuman</option>
+            <option>Salta</option>
           </select>
-          <label for="pais">Pais</label>
         </div>
-        <!--Pais-->
+        <!------------------------Provincia-------------------->
 
-        <!--Provincia-->
-        <div class="form-floating provincia mb-3">
-          <input type="text" class="form-control" id="provincia" name="provincia" placeholder="Provincia">
-          <label for="provincia">Provincia</label>
+        <!------------------------Ciudad----------------------->
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="Ciudad"  required>
         </div>
-        <!--Provincia-->
+        <!------------------------Ciudad----------------------->
 
-        <!--Ciudad-->
-        <div class="form-floating ciudad mb-3">
-          <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad">
-          <label for="ciudad">Ciudad</label>
+        <!------------------------CP--------------------------->
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Codigo Postal</label>
+          <input type="text" class="form-control" id="inputZip"  required>
         </div>
-        <!--Ciudad-->
+        <!------------------------CP--------------------------->
 
-        <!--Codigo Postal-->
-        <div class="form-floating cp mb-3">
-          <input type="text" class="form-control" id="cp" name="cp" placeholder="Codigo Postal">
-          <label for="cp">Codigo Postal</label>
+        <!------------------------Telefono--------------------->
+        <div class="col-12">
+          <label for="telefono" class="form-label">Telefono</label>
+          <input type="text" class="form-control" id="telefono" placeholder="(011)-2222-3333" required>
         </div>
-        <!--Ciudad-->
+        <!------------------------Telefono--------------------->
 
-        <!--Preguntas-->
-        <div class="form-floating preguntas">
-          <textarea class="form-control" id="preguntas" name="preguntas" placeholder="Leave a comment here" style="height: 100px"></textarea>
-          <label for="preguntas">Dejanos tu Consulta</label>
+        <!------------------------Promociones------------------>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Deseo Recibir Promociones
+            </label>
+          </div>
+        <!------------------------Promociones------------------>
+
+        <!------------------------Botones Form----------------->
         </div>
-        <!--Preguntas-->
-      </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <input class="btn btn-primary" type="reset" value="Borrar">
+        </div>
+        <!------------------------Botones Form----------------->
+      </form>
     </main>
     <footer class="container-fluid py-5">
       <div class="row">
