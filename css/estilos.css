@@ -3,6 +3,46 @@
   padding: 0;
 }
 
+.formulario {
+  display: grid;
+  grid-template-columns: repeat 4, 1fr;
+  grid-template-rows: repeat 5, 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "nombre nombre nombre nombre" "email email email email" "pais pais provincia provincia" "ciudad ciudad cp cp" "preguntas preguntas preguntas preguntas";
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+
+.nombre {
+  grid-area: nombre;
+}
+
+.email {
+  grid-area: email;
+}
+
+.pais {
+  grid-area: pais;
+}
+
+.provincia {
+  grid-area: provincia;
+}
+
+.ciudad {
+  grid-area: ciudad;
+}
+
+.cp {
+  grid-area: cp;
+}
+
+.preguntas {
+  grid-area: preguntas;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }
