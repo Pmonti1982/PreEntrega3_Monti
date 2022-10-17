@@ -5,6 +5,17 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+/* ====================Productos html============================================*/
+
+/* ====================Productos html============================================*/
+
+
+
+/* ====================Contacto html=============================================*/
 .formulario {  
     display: grid;
     grid-template-columns: repeat (4, 1fr);
@@ -35,12 +46,9 @@
   .cp { grid-area: cp; }
   
   .preguntas { grid-area: preguntas; }
-  
+/* ====================Contacto html=============================================*/
 
-html {
-    font-family: 'Roboto', sans-serif;
-}
-/* Formato Header*/
+/* ====================Header=============================================*/
 .navbar {
    background-color: $navbar-backcolor;
 }
@@ -52,8 +60,9 @@ html {
    color: $navli-footerli;
    font-style: italic;
 }
+/* ====================Header=============================================*/
 
-/* Formato Main*/
+/* ====================Formatos generales=================================*/
 main, footer {
     background-color: $main-backgcolor;
 }
@@ -68,7 +77,9 @@ h3 {
 p {
     text-align: justify;
 }
+/* ====================Formatos generales=================================*/
 
+/* ====================Index html=============================================*/
 /* Cards*/
 .bi-recycle, .bi-droplet-half, .bi-car-front-fill {
     background-color: rgb(255, 227, 225);
@@ -81,16 +92,18 @@ p {
             background-color: rgba(255, 0, 0, 0.514) !important;
         }
 }
+/* ====================Index html=============================================*/
 
-/* Galeria*/
+/* ====================Galeria html=============================================*/
 .card {
     filter: grayscale(100%);
         &:hover {
                 filter: none; 
         }
 }
+/* ====================Galeria html=============================================*/
 
-/* Footer */
+/* ====================Footer=============================================*/
 .nav a {
     color: $navli-footerli !important;
 }
@@ -115,6 +128,7 @@ p {
     color: rgb(255 48 108);
     font-size: 20px;
 }
+/* ====================Footer=============================================*/
 
 /* Media queries */
 

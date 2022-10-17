@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Productos</a>
+                  <a class="nav-link" aria-current="page" href="productos.html">Productos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="galeria.html">Galeria</a>
@@ -41,7 +41,7 @@
                   <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Entregas</a>
+                  <a class="nav-link" href="entregas.html">Entregas</a>
                 </li>                  
               </ul>
               <!--Seleccion de Idioma-->
@@ -59,25 +59,25 @@
     </header>
     <main>
       <h1>Dejanos tus Consultas</h1>
-      <form class="row g-3 px-5">
+      <form class="row g-3 formPadding px-5">
         <!------------------------Email------------------------>
         <div class="col-md-6">
-          <label for="inputEmail" class="form-label">Email</label>
+          <label for="inputEmail" class="form-label">Email *</label>
           <input type="email" class="form-control form-control-sm" id="inputEmail" placeholder="ejemplo@email.com" required>
         </div>
         <!------------------------Email------------------------>
 
         <!------------------------Nombre----------------------->
         <div class="col-md-6">
-          <label for="nombre" class="form-label">Nombre y Apellido</label>
-          <input type="text" class="form-control form-control-sm" id="nombre" required>
+          <label for="nombre" class="form-label">Nombre y Apellido *</label>
+          <input type="text" class="form-control form-control-sm" id="nombre">
         </div>
         <!------------------------Nombre----------------------->
 
         <!------------------------Direccion-------------------->
         <div class="col-12">
           <label for="inputAddress" class="form-label">Direccion</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Av. Siempre Viva 1234" required>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Av. Siempre Viva 1234">
         </div>
         <!------------------------Direccion-------------------->
 
@@ -97,28 +97,37 @@
         <!------------------------Ciudad----------------------->
         <div class="col-md-6">
           <label for="inputCity" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="inputCity" placeholder="Ciudad"  required>
+          <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
         </div>
         <!------------------------Ciudad----------------------->
 
         <!------------------------CP--------------------------->
         <div class="col-md-2">
-          <label for="inputZip" class="form-label">Codigo Postal</label>
-          <input type="text" class="form-control" id="inputZip"  required>
+          <label for="inputZip" class="form-label">C.P.</label>
+          <input type="text" class="form-control" id="inputZip">
         </div>
         <!------------------------CP--------------------------->
 
         <!------------------------Telefono--------------------->
         <div class="col-12">
-          <label for="telefono" class="form-label">Telefono</label>
+          <label for="telefono" class="form-label">Telefono *</label>
           <input type="text" class="form-control" id="telefono" placeholder="(011)-2222-3333" required>
         </div>
         <!------------------------Telefono--------------------->
 
+        <!------------------------Pregunta--------------------->
+        <div class="mb-1">
+          <label for="exampleFormControlTextarea1" class="form-label">Consulta *</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+        </div>
+        <!------------------------Pregunta--------------------->
+        
+        <p> * Campos mandatorios </p>        
+        
         <!------------------------Promociones------------------>
         <div class="col-12">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
             <label class="form-check-label" for="gridCheck">
               Deseo Recibir Promociones
             </label>
