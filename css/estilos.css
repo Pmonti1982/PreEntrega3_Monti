@@ -105,7 +105,7 @@ p {
 
 /* Footer */
 .nav a {
-  color: rgb(121, 79, 79) !important;
+  color: rgb(121, 79, 79) !important !important;
 }
 
 #footerHover ul li:hover {
@@ -131,6 +131,13 @@ p {
 .bi-instagram {
   color: rgb(255, 48, 108);
   font-size: 20px;
+}
+
+/* Media queries */
+@media (min-width: 576px) {
+  .formPadding {
+    padding: 10px 180px 10px 180px !important;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

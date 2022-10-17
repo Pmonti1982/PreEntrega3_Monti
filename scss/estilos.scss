@@ -115,3 +115,11 @@ p {
     color: rgb(255 48 108);
     font-size: 20px;
 }
+
+/* Media queries */
+
+@media (min-width: 576px) {
+    .formPadding {
+        padding: 10px 180px 10px 180px !important;
+    }
+}
