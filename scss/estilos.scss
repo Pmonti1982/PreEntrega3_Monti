@@ -10,10 +10,15 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 /* ====================Productos html============================================*/
+table {
+    margin-top: 30px;
+}
+th, td {
+    text-align: center !important;
+    font-style: italic;
+}
 
 /* ====================Productos html============================================*/
-
-
 
 /* ====================Contacto html=============================================*/
 .formulario {  
@@ -68,7 +73,9 @@ main, footer {
 }
 h1, h2 {
     text-align: center; 
-    padding-top: 3px;
+    padding-top: 20px;
+    padding-bottom: 5px
+
 }
 h3 { 
     font-family: 'Indie Flower', cursive;
@@ -135,5 +142,12 @@ p {
 @media (min-width: 576px) {
     .formPadding {
         padding: 10px 180px 10px 180px !important;
+    }
+    h1{
+        font-size: 60px;
+        padding-bottom: 20px
+    }
+    th,td {
+        font-size: 30px;
     }
 }

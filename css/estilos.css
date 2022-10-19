@@ -3,6 +3,22 @@
   padding: 0;
 }
 
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ====================Productos html============================================*/
+table {
+  margin-top: 30px;
+}
+
+th, td {
+  text-align: center !important;
+  font-style: italic;
+}
+
+/* ====================Productos html============================================*/
+/* ====================Contacto html=============================================*/
 .formulario {
   display: grid;
   grid-template-columns: repeat 4, 1fr;
@@ -43,11 +59,8 @@
   grid-area: preguntas;
 }
 
-html {
-  font-family: "Roboto", sans-serif;
-}
-
-/* Formato Header*/
+/* ====================Contacto html=============================================*/
+/* ====================Header=============================================*/
 .navbar {
   background-color: rgba(255, 209, 209, 0.774);
 }
@@ -62,14 +75,16 @@ html {
   font-style: italic;
 }
 
-/* Formato Main*/
+/* ====================Header=============================================*/
+/* ====================Formatos generales=================================*/
 main, footer {
   background-color: rgb(255, 227, 225);
 }
 
 h1, h2 {
   text-align: center;
-  padding-top: 3px;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
 h3 {
@@ -81,6 +96,8 @@ p {
   text-align: justify;
 }
 
+/* ====================Formatos generales=================================*/
+/* ====================Index html=============================================*/
 /* Cards*/
 .bi-recycle, .bi-droplet-half, .bi-car-front-fill {
   background-color: rgb(255, 227, 225);
@@ -95,7 +112,8 @@ p {
   background-color: rgba(255, 0, 0, 0.514) !important;
 }
 
-/* Galeria*/
+/* ====================Index html=============================================*/
+/* ====================Galeria html=============================================*/
 .card {
   filter: grayscale(100%);
 }
@@ -103,7 +121,8 @@ p {
   filter: none;
 }
 
-/* Footer */
+/* ====================Galeria html=============================================*/
+/* ====================Footer=============================================*/
 .nav a {
   color: rgb(121, 79, 79) !important !important;
 }
@@ -133,10 +152,18 @@ p {
   font-size: 20px;
 }
 
+/* ====================Footer=============================================*/
 /* Media queries */
 @media (min-width: 576px) {
   .formPadding {
     padding: 10px 180px 10px 180px !important;
+  }
+  h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+  }
+  th, td {
+    font-size: 30px;
   }
 }
 
